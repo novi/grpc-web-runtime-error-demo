@@ -5,5 +5,5 @@ import "User/User.proto";
 package OtherPackage;
 
 message SomeMessage {
-    User.User user = 1;
+    user.User user = 1;
 }

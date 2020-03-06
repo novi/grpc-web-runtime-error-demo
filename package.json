@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate": "docker run --rm -v $PWD:/projects -w /projects grpcweb/common protoc -I./proto --js_out=import_style=commonjs:./generated --grpc-web_out=import_style=commonjs+dts,mode=grpcweb:./generated ./proto/**/*.proto",
+    "generate": "mkdir -p ./generated && docker run --rm -v $PWD:/projects -w /projects grpcweb/common protoc -I./proto --js_out=import_style=commonjs:./generated --grpc-web_out=import_style=commonjs+dts,mode=grpcweb:./generated ./proto/**/*.proto",
     "start": "webpack-dev-server --mode development --progress --config ./config/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

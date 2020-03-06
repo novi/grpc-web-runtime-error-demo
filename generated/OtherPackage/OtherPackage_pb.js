@@ -150,16 +150,16 @@ proto.OtherPackage.SomeMessage.serializeBinaryToWriter = function(message, write
 
 
 /**
- * optional User.User user = 1;
- * @return {?proto.User.User}
+ * optional user.User user = 1;
+ * @return {?proto.user.User}
  */
 proto.OtherPackage.SomeMessage.prototype.getUser = function() {
-  return /** @type{?proto.User.User} */ (
+  return /** @type{?proto.user.User} */ (
     jspb.Message.getWrapperField(this, User_User_pb.User, 1));
 };
 
 
-/** @param {?proto.User.User|undefined} value */
+/** @param {?proto.user.User|undefined} value */
 proto.OtherPackage.SomeMessage.prototype.setUser = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
